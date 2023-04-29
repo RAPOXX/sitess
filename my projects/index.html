@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>My projects Template Live Demo</title>
+</head>
+<body id="body">
+        <header>
+            <img src="https://capp.nicepage.com/a53b513b149f512e33b7e2834606ffabce330339/images/default-logo.png" alt="" srcset="">
+            <i class="fas fa-bars" id="open-sidebar"></i>
+        </header>
+
+        <nav id="sidebar">
+            <picture>
+                <i class="fas fa-times" id="closed_sidebar"></i>
+            </picture>
+            <a href="">Home</a>
+        </nav>
+
+
+        <div class="sidebar-transparent" id="sidebar_transparent"></div>
+
+
+
+
+        <section>
+            <h1>Projects</h1>
+            <p>"You can do anything you set your mind to." <br>
+                -Bejamin Franklin</p>
+
+
+                <div class="flex">
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                </div>
+                <button>VIEW MORE</button>
+
+
+        </section>
+
+
+
+
+
+</body>
+
+<script>
+    const open_sidebar = document.getElementById("open-sidebar")
+    const closed_sidebar = document.getElementById("closed_sidebar")
+    const sidebar = document.getElementById("sidebar")
+    const sidebar_transparent = document.getElementById("sidebar_transparent")
+    const body = document.getElementById("body")
+
+    open_sidebar.addEventListener("click", () => {
+        sidebar.style.width = "300px"
+        sidebar.style.visibility = "visible"
+        sidebar_transparent.style.display = "block"
+        body.style.overflowY = "hidden"
+    })
+
+    closed_sidebar.addEventListener("click", () => {
+        sidebar.style.width = "0px"
+        sidebar.style.visibility = "hidden"
+        sidebar_transparent.style.display = "none"
+        body.style.overflowY = "visible"
+    } )
+
+    
+    closed_sidebar.addEventListener("click", () => {
+        sidebar.style.width = "0px"
+        sidebar.style.visibility = "hidden"
+        sidebar_transparent.style.display = "none"
+        body.style.overflowY = "visible"
+    } )
+
+
+
+
+
+</script>
+
+</html>

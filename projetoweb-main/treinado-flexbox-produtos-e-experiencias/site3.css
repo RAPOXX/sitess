@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    background-color: white;
+}
+
+.icone-menu i{
+    font-size: 30px;
+}
+
+.icone-menu i:hover {
+    cursor: pointer;
+    color: rgb(245, 109, 132);
+}
+
+.container  {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    background-color: rgba(0, 0, 0,0.7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    display: none;
+    z-index: 9;
+}
+
+.container > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > nav > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.container > nav > a:hover {
+    color: rgb(133, 124, 124);
+    
+}
+
+.container > nav > picture {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.container > nav >  picture > i {
+    font-size: 30px;
+    color: white;
+}
+
+body {
+    background-color: rgb(215,198,247);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+main > img {
+    display: block;
+    max-width: 100%;
+    width: 50%;
+}
+
+section > main {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 10%;
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(160, 156, 156);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+}
+
+
+
+ .main-texto {
+     display: flex;
+     flex-direction: column;
+     padding: 30px 50px;
+
+ }
+.main-texto h1 {
+    color: rgb(148,102,234);
+    font-size: 3.1rem;
+}
+
+.main-texto p {
+    margin-top: 10px;
+}
+
+.main-texto span {
+    text-decoration: underline;
+}
+
+.main-texto button {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: rgb(255,117,153);
+    border: none;
+    border-radius: 20px;
+}
+
+.main-texto button:hover {
+    cursor: pointer;
+    background-color: rgb(255,117,153);
+}
+
+footer {
+    padding: 50px;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+footer > article {
+    margin-top: 20px;
+}
+
+footer > article > p > span > a {
+    color: rgb(153, 95, 204);
+}
+
+@media screen and (max-width: 800px) {
+    Section > main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    main > img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .main-texto {
+        width: 100%;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main > img {
+        height: 400px;
+    }
+}
+
+
+
+

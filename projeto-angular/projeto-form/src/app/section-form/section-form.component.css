@@ -1,0 +1,142 @@
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .info h1 {
+    font-size: 46px;
+    font-family: 'Nunito Sans';
+    margin: 20px 0;
+}
+
+section .info {
+    width: 50%;
+    background: #d7f5ed;
+    padding: 40px 50px;
+}
+
+section .info .flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section .info .flex .items {
+    display: flex;
+    align-items: center;
+}
+
+section .info img {
+    width: 64px;
+    height: 64px;
+}
+
+section .info p {
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+}
+
+
+section .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 100px 0;
+}
+
+section .form .input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+section .form .input-field input {
+    width: 300px;
+    height: 36px;
+    outline: none;
+    border: 1px solid rgba(182, 178, 178, 0.658);
+
+} 
+
+section .form .input-field label {
+    font-size: 16px;
+    font-family: 'Roboto Mono';
+}
+
+section .form button {
+    width: 300px;
+    height: 36px;
+    color: black;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+    margin: 10px 0;
+    background: #22eab5;
+    border: none;
+    outline: none;
+}
+
+section .form .media-login {
+    width: 300px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border: 1px solid rgba(189, 183, 183, 0.795);
+}
+
+section .form .media-login img {
+    width: 24px;
+    height: 24px;
+}
+
+section .form .media-login p {
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+    margin:  0 10px;
+
+}
+
+section span {
+    color: #06bd8d;
+}
+
+section .form p {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+}
+
+section label {
+    margin: 10px 0;
+}
+
+section .input-field:nth-child(2)  label {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    section .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .info {
+        width: 100%;
+        padding: 10px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

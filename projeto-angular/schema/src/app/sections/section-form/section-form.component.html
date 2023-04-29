@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+<section>
+      
+    <h1>{{text}}</h1>
+        <div class="input-field">
+            
+            <label for="Email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        
+        <div class="input-field">
+            
+            
+            <label class="lebal2" for="Password">Password</label>
+            <input type="password" name="password" id="password">
+            
+        </div>
+        
+    <button>Log in</button>
+
+    <div class="div-p">
+
+        <p>Don't have an account?<a href="">Sign up</a></p>
+        <p>or</p>
+    </div>
+        
+
+    <div class="links-login">
+        <div class="item items">
+            <i class="fab fa-google"></i>
+            <p>Log in with Google</p>
+        </div>
+        
+        <div class="item items">
+            <i class="fab fa-github"></i>
+            <p>Log in with Github</p>
+        </div>
+
+    </div>
+
+    <div class="div-p">
+
+        <p>You can also <a href="">Continue as a Guest</a></p>
+    </div>
+
+
+    <span>
+        <p>This site is protected reCAPTCHA and the google <a href="">Privacy Policy</a> and <a href="">Terms of service</a> apply.</p>
+    </span>
+
+    <app-section-info [nome]="nomedocurso"></app-section-info>
+</section>

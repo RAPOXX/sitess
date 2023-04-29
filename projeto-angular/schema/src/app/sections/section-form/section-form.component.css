@@ -1,0 +1,94 @@
+section {
+    width: 50%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 40px;
+    right: 25%;
+    text-align: center;
+}
+
+
+section button {
+    width: 300px;
+    height: 36px;
+    background: #22eab5;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+section input {
+    width: 300px;
+    height: 36px;
+    margin: 20px 0;
+
+}
+
+section label {
+    position: relative;
+    right: -40px;
+}
+
+section .lebal2 {
+    right: -60px;
+}
+
+
+.links-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-login .items {
+    width: 300px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(182, 176, 176);
+    margin: 10px 0;
+}
+
+section a {
+    text-decoration: none;
+    color: #06bd8d;
+    border-bottom: #06bd8d;
+}
+
+
+.input-field {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+section button:hover {
+    cursor: pointer;
+    background: #22eab5;
+}
+
+section span p {
+    position: absolute;
+    right: -200px;
+    bottom: 150px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+}
+
+section span p a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.div-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+}

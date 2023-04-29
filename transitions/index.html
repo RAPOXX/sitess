@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav    {
+            width: 0;
+            height: 300px;
+            background:black;
+            transition-duration: 2s ;
+            transition-property: width;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        nav:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn2">no click</button>
+    <button id="btn">click me</button>
+    <nav id="nav">
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+    </nav>
+</body>
+
+    <script>
+        const nav = document.getElementById("nav")
+        const button = document.getElementById("btn")
+        const button2 = document.getElementById("btn2")
+        button.addEventListener("click" , () => {
+            nav.style.width = "500px"
+            
+        })
+
+        button2.addEventListener("click", () => {
+            nav.style.width = "0px"
+        })
+    </script>
+
+
+</html>

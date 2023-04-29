@@ -1,0 +1,67 @@
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #22eab5;
+    position: relative;
+    padding: 15px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin: 0 10px;
+}
+
+header .logo img {
+    width: 43px;
+    height: 38px;
+    margin: 0 20px;
+}
+
+header h1 {
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+}
+
+header h1 a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+header .buttons {
+    display: flex;
+    align-items: center;
+}
+
+header .buttons button:nth-child(1) {
+    width: 80px;
+    height: 40px;
+    background: #69ffd7;
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+header .buttons button:nth-child(2) {
+    width: 80px;
+    height: 40px;
+    color: black;
+    background: white;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

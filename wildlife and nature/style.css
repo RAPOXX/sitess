@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@100&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=Oswald:wght@200&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,800&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200;400;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --fontprincipal: 'Playfair Display',sans-serif;
+    --fontsegundaria: 'Raleway',sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: black;
+}
+
+header > nav > i {
+    font-size: 30px;
+    color: white;
+}
+
+header > nav > i:hover {
+    color: rgb(160, 152, 152);
+    cursor: pointer;
+}
+
+header > h2 > a {
+    color: white;
+    font-size: 30px;
+    font-family: var(--fontprincipal);
+    text-decoration: none;
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+
+}
+
+header > nav > a:hover {
+    color: rgb(177, 167, 167);
+}
+
+.sidebar {
+    visibility: hidden;
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    transition-duration: 2s;
+    transition-property: width;
+}
+
+.sidebar > a {
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.sidebar > a:hover {
+    color: rgb(185, 176, 176);
+}
+
+.sidebar > picture {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar > picture > i {
+    font-size: 30px;
+    margin: 20px 50px;
+    color: white;
+}
+
+.sidebar > picture > i:hover {
+    color: rgb(163, 154, 154);
+    cursor: pointer;
+}
+
+.sidebar-transparent {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/6c43943bbf88586fa1937f43/Untitled1min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.section1 > h1 {
+    font-size: 72px;
+    font-family: var(--fontprincipal);    
+    margin: 20px 0;
+}
+
+.section1 > p {
+    font-size: var(--fontsegundaria);
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.section1 > button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: black;
+    background: white;
+    outline: none;
+    border: none;
+    margin: 20px 0;    
+    font-family: var(--fontsegundaria);
+    font-size: 18px;
+}
+
+.section2 {
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.section2 > h1 {
+    font-size: 48px;
+    font-family: var(--fontprincipal);
+    padding: 20px 0 ;
+    text-align: center;
+}
+
+.section2 > main > .items > h2 {
+    font-size: 30px;
+    font-family: var(--fontprincipal);
+    margin: 300px 0 39px;
+}
+
+.section2 > p {
+    font-size: 16px;
+    font-family: var(--fontsegundaria);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section2 > main {
+    display: flex;
+    }
+
+.section2 > main > .items {
+    width: 33%;
+    height: 550px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section2 > main > .items > h2 {
+    font-size: 30px;
+    font-family: var(--fontprincipal);
+}
+
+.section2 > main > .item1 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/112beb4aa06c5a758acac4da/123.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+}
+.section2 > main > .item2 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/88b584008438593693841927/3f8d3833-72b3-3072-3d51-57dad152da82.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+}
+.section2 > main > .item3 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/15b282e9ca1c5228a1cfbb6c/4a1d4947-fd02-e665-4d57-deac20b3eb39.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+}
+
+.section3 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/0d93a305b9975af6bddfb586/min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.section3 > h1 {
+    font-size: 60px;
+    font-family: var(--fontprincipal);
+    margin: 20px 0;
+}
+
+.section3 > p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: var(--fontsegundaria);
+}
+
+.section3 > p > a {
+    text-decoration: none;
+    border-bottom: 1px dashed red;
+}
+
+.section4 {
+    width: 100%;
+    background:  black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.section4 > h1 {
+    font-size: 48px;
+    font-family: var(--fontprincipal);
+    margin: 20px 0;
+}
+
+.section4 > p {
+    font-size: 16px;
+    font-family: var(--fontsegundaria);
+    margin: 20px;
+}
+
+.section5 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c05e1953084e55a18db6c559/s.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.section6 > .images > .div-img1 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/630f6b7e4adc5916a661faa2/t.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section6 > .images > .div-img2 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/36f32434753b5dd4a91a764b/rfg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.images {
+    display: flex;
+}
+
+.section6 {
+    display: flex;
+    justify-content: center;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+
+.section6 > main {
+    text-align: center;
+}
+
+.section6 > main > h1 {
+    margin: 20px 0;
+    font-size: 48px;
+    font-family: var(--fontprincipal);
+}
+
+.section6 > main > p {
+    font-size: 16px;
+    font-family: "Raleway";
+    margin: 20px 0;
+}
+
+.imgs {
+    width: 50%;
+    height: 500px;
+    margin: 20px 30px;
+}
+
+
+.section7 > .item1{
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/634b6abcbab052bfb8f80bfa/fr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.section7 > .item2{
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/ca47cedc66015cc69f235271/wsed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.section7 > .item3{
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/41e4febadd2458d48860a9bd/cfg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.section7 > .item4{
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/78927d630c135de3ac93da3e/sw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section7 {
+    display: flex;
+    background: black;
+    justify-content: center;
+}
+
+.section7 > .items {
+    width: 33%;
+    min-width: 20%;
+    height: 400px;margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    flex-wrap: wrap;    
+}
+
+
+footer > article {
+    margin: 20px 100px;
+}
+
+footer > article > h1 {
+    font-size: 18px;
+    font-family: var(--fontprincipal);
+    margin: 20px 0;
+}
+
+footer > article > p {
+    font-size: 14px;
+    font-family: "Raleway";
+    margin: 20px 0 ;
+}

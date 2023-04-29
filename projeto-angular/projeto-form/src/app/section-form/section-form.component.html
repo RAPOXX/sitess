@@ -1,0 +1,110 @@
+<section>
+
+    <div class="info">
+
+        <h1>Generate JSON schema <br> from JSON</h1>
+        <div class="flex">
+            
+        <div class="item items">
+            <img src="https://jsonschema.net/assets/svg/icon-edit.svg" alt="" srcset="">
+            <p>fully editable schema</p>
+        </div>
+        
+        <div class="item items">
+            <img src="https://jsonschema.net/assets/svg/icon-format.svg" alt="" srcset="">
+            <p>choose from JSON, YAML, XML</p>
+        </div>
+        
+        <div class="item items">
+            <img src="https://jsonschema.net/assets/svg/icon-api.svg" alt="" srcset="">
+            <p>API integration avaible</p>
+        </div>
+        
+    </div>
+</div>
+
+
+    <div class="form" id="form" *ngIf="exp" >
+        <div class="input-field">
+
+            <label for="" >Email</label>
+            <input #email type="email"  name="email" id="email">
+        </div>
+
+
+
+        <div class="input-field">
+
+            <label for="">Password <span (click)="mostrarecupera()">Forgot password?</span></label>
+            <input  #password type="password" name="password" id="password">
+        
+
+        </div>
+
+    <button (click)="mostravalor()" >Log in</button>
+        <p>Don't have an account? <span (click)="escondeformulario()">sign up</span></p>
+        <p>or</p>
+
+        <div class="media-login">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+            <p>Log in with Google</p>
+        </div>
+
+        <div class="media-login">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/github.png"/>
+            <p>Log in with GitHub</p>
+
+        </div>
+        <p>You can also <span>continue as a Guest</span></p>
+    </div>
+
+
+
+
+
+
+
+    
+    
+    
+    <div class="form-signup form" *ngIf="exp2">
+        <div class="input-field">
+            
+            <label for="">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        
+        
+        <div class="input-field">
+            
+            <label for="">Password <span (click)="mostrarecupera()">Forgot password?</span></label>
+            <input type="password" name="password" id="password">
+            
+            
+        </div>
+        
+        <div class="input-field">
+            <label for="">Confirm password</label>
+            <input type="text" name="confirm-password" id="confirm-password">
+        </div>
+        
+        <button>Sign up</button>
+        
+        <p>Have an account? <span (click)="mostraformulario()" >Log in</span></p>
+        <p>You can also <span>continue as a guest</span></p>
+    </div>
+
+    <div class="recupera-senha form" *ngIf="exp3">
+        <div class="input-field">
+
+            <label for="">Email</label>
+            <input type="email" name="email-recupera" id="email-recupera">
+        </div>
+
+        <p>Enter your email addres and we'll send you a <br>
+            recovery link.</p>
+            <button>Send recovery email</button>
+        
+    </div>
+    
+</section>

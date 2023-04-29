@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<style>
+
+    div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+div i:nth-child(1) {
+    position: absolute;
+    font-size: 50px;
+    right: -20%;
+    top: 50%;
+    transform: translate(-50%);
+}
+div i:nth-child(2) {
+    position: absolute;
+    font-size: 50px;
+    left: -20%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+</style>
+
+<body>
+    <div id="slide">
+        <i class="fas fa-arrow-right" id="direita"></i>
+        <i class="fas fa-arrow-left" id="esquerda"></i>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

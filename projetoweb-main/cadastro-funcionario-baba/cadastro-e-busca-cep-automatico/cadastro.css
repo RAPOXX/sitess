@@ -1,0 +1,40 @@
+body {
+    background-color: rebeccapurple;
+}
+
+.container {
+    height: 600px;
+    width: 500px;
+    text-align: center;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 90px;
+    background-color: white;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+input{
+    height: 40px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+#button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: rgb(81, 32, 129);
+    border-radius: 30px;
+}
+
+#button:hover {
+    background-color: rgb(113, 63, 163);
+    cursor: pointer;
+}
+

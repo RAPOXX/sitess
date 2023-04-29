@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@100&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:wght@100&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200;400;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+    align-items: center;
+}
+
+header > nav > a {
+    color: black;
+    text-decoration: none;    
+    padding: 15px;
+    font-size: 16px;
+}
+
+header > i {
+    visibility: hidden;
+    font-size: 30px;
+}
+
+header > i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+section {
+    text-align: center;
+    background: #c8e8e0;
+    padding: 30px 0;
+}
+
+section > main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section > main > .items {
+    width: 300px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px 30px;
+}
+
+section > main > .items > h3 {
+    color: #2e937a;
+    font-size: 24px;
+    font-family: 'Source Sans pro',sans-serif;
+    margin: 20px 0;
+}
+
+section > main > .items > p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+section > main > .items > button {
+    width: 100px;
+    background: #2e937a;
+    border: none;
+    height: 30px;
+    color: white;
+    margin: 20px 0;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+section > h3 {
+    color: #2e937a;
+    font-size: 24px;
+    padding: 20px 0;
+    font-family: "Source Sans pro";
+}
+
+section > h1 {
+    color: #2e937a;
+    font-size: 48px;
+    margin: 20px;
+    font-family: "Source Sans pro";
+}
+
+section > main > .items > img {
+    width: 100%;
+}
+
+section > p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+section > p > span {
+    border-bottom: 1px solid black;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333333;
+}
+
+footer > article {
+    margin: 50px 0;
+}
+
+footer > article > p {
+    font-size: 14px;
+    color: white;
+}
+
+
+footer > article > p > a {
+    color: #b8f0e2;
+}
+
+.menu-responsivo {
+    display: none;
+}
+
+.menu-responsivo > nav {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+
+
+
+}
+
+.menu-responsivo > nav > picture {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu-responsivo > nav > picture > i {
+    font-size: 30px;
+    margin: 20px 50px;
+    color: white;
+}
+
+.menu-responsivo > nav > picture > i:hover {
+    color: rgb(148, 139, 139);
+    cursor: pointer;
+}
+
+.menu-responsivo > nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 
+    
+}
+
+.menu-responsivo > nav > a:hover {
+    color: rgb(165, 158, 158);
+}
+
+.menu-transparente {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    header > i {
+        visibility: visible;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    section > main > .items {
+        width: 380px;
+    }
+
+}

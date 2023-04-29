@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <form action="cadastro.php" method="POST">
+            <input type="text" name="name" id="name" placeholder="Nome">
+            <input type="text" name="nascimento" id="nascimento" placeholder="Data de nascimento" onkeyup="formata_nascimento()" maxlength="10">
+            <input type="text" name="cep" id="cep" placeholder="Cep" onkeyup="formata_cep()" maxlength="9">
+            <input type="text" name="rua" id="rua" placeholder="Rua">
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            <input type="submit" id="button" value="Cadastrar">
+        </form>
+    </div>
+</body>
+
+<script>
+let cep = document.querySelector('#cep');
+let rua = document.querySelector('#rua');
+let bairro = document.querySelector('#bairro');
+let estado = document.querySelector('#estado');
+
+cep.addEventListener('blur', function(e) {
+    let cep = e.target.value;
+    let script = document.createElement('script');
+    script.src = 'https://viacep.com.br/ws/'+cep+'/json/?callback=popularForm';
+    document.body.appendChild(script);
+})
+
+function popularForm(resposta) {
+    console.log(resposta)
+    rua.value = resposta.logradouro;
+    bairro.value = resposta.bairro;
+    cidade.value = resposta.localidade;
+    estado.value = resposta.uf;
+}
+
+function formata_cep(){
+    var cep = document.getElementById("cep");
+    if(cep.value.length == 5){
+        cep.value += "-";
+    }
+}
+
+function formata_nascimento(){
+    nascimento = document.getElementById("nascimento");
+    if(nascimento.value.length == 2 || nascimento.value.length == 5){
+        nascimento.value += "/";
+    }
+}
+
+function letra(){
+    const sub = str.Tolowercase().replace(/(?:^|\s)\S/g, function(a){
+        return a.ToUpperCase();
+    })
+}
+
+
+
+</script>
+</html>

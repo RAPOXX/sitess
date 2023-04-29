@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                 <li><a href="index.html">FUNCIONARIO</a></li>
+                 <li><a href="encontradado.php">PROCURAR</a></li>
+                 <li><a href="">SOBRE</a></li>
+                 <li><a href="">MAIS</a></li>
+            </ul>
+        </nav>
+            <hr></hr>
+    </div>
+    <h2>FUNCIONARIO BABA</h2>
+        <div class="container">
+            <form action="cadastro2.php" method="POST"> 
+                <div class="input-field">
+                <input type="text" name="foto" id="foto" placeholder="Foto" autocomplete="off" onkeydown="confere()" >
+                <input type="text" name="primeironome" id="primeironome" placeholder="Primeiro Nome" autocomplete="off" onkeydown="confere2()">
+                <input type="text" name="matricula_socio_responsavel" value="Sócio Resp.: " id="matricula_socio_responsavel" placeholder="Matricula Socio Responsalvel" onkeydown="confere3()" autocomplete="off">
+
+            </div>  
+
+            <div class="input-field">
+         
+                <select name="funcao" id="funcaoo">
+                    <option value="ACOMPHANTE">ACOMPHANTE</option>
+                    <option value="BABA">BABÀ</option>
+                    <option value="MOTORISTA">MOTORISTA</option>
+                </select>
+
+                <input type="text" name="matricula_dp" id="matricula_dp" placeholder="Matricula DP" onkeydown="confere4()"  autocomplete="off">
+                <input type="text" name="nomecompleto" id="nomecompleto" placeholder="Nome Completo" onkeyup="maiuscula()" autocomplete="off" onkeydown="confere5()">
+            </div>
+
+            <div class="input-field">
+     
+                <input type="text" name="identidade" id="identidade" placeholder="Identidade" autocomplete="off" onkeydown="confere6()">
+                <input type="text" name="admissao" id="admissao" onkeyup="formata_admissao()" placeholder="Admissao" autocomplete="off" onkeydown="confere7()">
+                <input type="text" name="nascimento" id="nascimento" onkeyup="formata_nascimento()" placeholder="Nascimento" autocomplete="off" onkeydown="confere8()">
+     
+
+            </div>
+                <input type="submit" id="button" value="Enviar">
+            </form>
+        </div>
+
+        <script>
+
+
+            function formata_nascimento(){
+                nascimento = document.getElementById("nascimento");
+                if(nascimento.value.length ==2 || nascimento.value.length ==5){
+                    nascimento.value += "/";
+                }
+            }
+
+            function formata_admissao(){
+                admissao = document.getElementById("admissao");
+                if(admissao.value.length ==4){
+                    admissao.value += "/";
+                }
+            }
+
+            function confere(){
+
+                if(document.getElementById("foto").value == ""){
+                    document.getElementById("foto").style.borderBottomColor = 'red'
+                }
+                
+                else{
+                     document.getElementById("foto").style.borderBottomColor = 'green'
+                     }
+            }
+
+            function confere2(){
+                if(document.getElementById("primeironome").value == ""){
+                    document.getElementById("primeironome").style.borderBottomColor = 'red'
+                }
+                
+                else {
+                    document.getElementById("primeironome").style.borderBottomColor = 'green'
+                }
+            }
+
+            function confere3(){
+                if(document.getElementById("matricula_socio_responsavel").value == ""){
+                    document.getElementById("matricula_socio_responsavel").style.borderBottomColor = 'red'
+                }
+
+                else {
+                    document.getElementById("matricula_socio_responsavel").style.borderBottomColor = 'green'
+                }
+            }
+
+            function confere4(){
+                if(document.getElementById("matricula_dp").value == ""){
+                    document.getElementById("matricula_dp").style.borderBottomColor = 'red'
+                }
+
+                else {
+                    document.getElementById("matricula_dp").style.borderBottomColor = 'green'
+                }
+            }
+
+           function confere5(){
+               if(document.getElementById("nomecompleto").value == ""){
+                    document.getElementById("nomecompleto").style.borderBottomColor = 'red'
+               }
+
+               else {
+                   document.getElementById("nomecompleto").style.borderBottomColor = 'green '
+               }
+           }
+
+            function confere6(){
+                if(document.getElementById("identidade").value == ""){
+                    document.getElementById("identidade").style.borderBottomColor = 'red'
+                }
+
+                else {
+                    document.getElementById("identidade").style.borderBottomColor = 'green'
+                }
+            }
+
+            function confere7(){
+                if(document.getElementById("admissao").value == ""){
+                    document.getElementById("admissao").style.borderBottomColor = 'red'
+                }
+
+                else {
+                    document.getElementById("admissao").style.borderBottomColor = 'green'
+                }
+            }
+            
+            function confere8(){
+                if(document.getElementById("nascimento").value == ""){
+                    document.getElementById("nascimento").style.borderBottomColor = 'red'
+                }
+
+                else {
+                    document.getElementById("nascimento").style.borderBottomColor = 'green'
+                }
+
+            }
+        
+
+              
+
+            </script>
+            
+</body>
+</html>

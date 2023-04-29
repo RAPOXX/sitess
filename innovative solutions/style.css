@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=Oswald:wght@200&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;300;400;500;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&family=Sora:wght@100;200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;400;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+header > i {
+    font-size: 30px;
+
+}
+
+.section1 {
+    width: 100%;
+    height: 120vh;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b572b468219650dd8c8a826c/srr-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+.section1 > .info {
+    width: 505px;
+    height: 540px;
+    background: white;
+    margin: 0 150px;
+    padding: 20px;
+
+}
+
+.section1 > .info > .bola-laranja {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #eb6928;
+}
+
+.section1 > .info > h1 {
+    font-size: 60px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section1 > .info > p {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+}
+
+.section1 > .info > p:nth-child(2) > span {
+    border-bottom: 1px solid black;
+}
+font-size: 18px;
+font-family: 'PT Sans';
+.section1 > .info > button {
+    width: 190px;
+    height: 62px;
+    font-size: 14px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+    color: white;
+    background: #eb6928;
+    outline: none;
+    border: none;
+}
+
+
+
+.section1 > .info > button:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.section2 > .flex > .items > h1 {
+    font-size: 24px;
+    font-family: 'Sora';
+    color: #eb6928;
+    margin: 20px 0;
+}
+
+.section2 > .flex > .items > p {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+    color: #999999;
+}
+
+.section2 > .flex > .items > a {
+    text-decoration: none;
+    color: black;
+    margin: 20px 0;
+    border-bottom: 1px solid #eb6928;
+}
+
+.section2 > .flex {
+    display: flex;
+    justify-content: center;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+
+}
+
+.section2 > .flex > .items {
+    margin: 40px 30px;
+    background: white;
+    padding: 20px;
+}
+
+.section2 > .flex > .items > i {
+    padding: 10px;
+    border: 3px solid #eb69285b;
+    border-radius: 10px;
+    font-size: 42px;
+    color: #eb6928;
+    position: relative;
+    top: -40px;
+}
+
+.section2 > h1 {
+        font-size: 60px;
+        font-family: 'Sora';
+        color: #eb6928;
+}
+
+
+
+.section3 > .quadrado-laranja {
+    width: 736px;
+    height: 490px;
+    background: #eb6928;
+
+}
+
+.section3 > .div-imagem {
+    width: 598px;
+    height: 593px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/0104b9e474ca537dbb323077/gh-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    left: 190px;
+}
+
+.section3 > .retangulo-laranja {
+    width: 296px;
+    height: 516px;
+    background: #eb6928;
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+}
+
+.section3 > .info {
+    width: 610px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: #292d33;
+    position: absolute;
+    left: 700px;
+    bottom: 50px;
+}
+
+.section3 > .info > h2 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin: 20px 0;
+}
+
+.section3 > .info > h1 {
+    font-size: 60px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section3 > .info > p {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+}
+
+.section3 > .info > p > span {
+    border-bottom: 1px solid white;
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4114d439f46e50e5a1b05067/iki-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 > h1 {
+    font-size: 68px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section4 > .flex {
+    display: flex;
+}
+
+.section4 > .flex > .items {
+    width: 237px;
+    height: 310px;
+    margin: 20px 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+}
+
+.section4 > .flex > .items > h1 {
+    font-size: 24px;
+    font-family: 'Sora';
+    margin: 10px 0;
+    color: #eb6928;
+
+}
+
+.section4 > .flex > .items > .list > p {
+    font-size: 20px;
+    font-family: 'PT Sans';
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section4 > .flex > .items > .list > p > img {
+    width: 16px;
+    height: 16px;
+}
+
+.section4 > h1 {
+    font-size: 48px;
+    font-family: 'Sora';
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+.section4 > p {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    color: white;
+}
+
+.section4 > p > span {
+    border-bottom: 1px solid white;
+}
+
+.section5 > .grid > .items {
+    margin: 20px 20px;
+}
+
+.section5 { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section5 > .grid {
+    display: grid;
+    grid-template-columns: 262px 262px 555px;
+}
+
+.section5 > .grid > .item1 > h1 {
+    font-size: 24px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section5 > .grid > .item1 > p {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'PT Sans';
+    line-height: 30px;
+}
+
+
+.section5 > .grid > .item1 > p > span {
+    border-bottom: 1px solid black;
+}
+
+
+.section5 > .grid > .item2 {
+    height: 283px;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/cb90b2e84307548d92caf296/trrt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section5 > .grid > .item3 {
+    height: 283px;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e53c3d61788051e7a84c5f99/logo-mockup-black-facade-sign_145275-281.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/2;
+    position: relative;
+    top: -263px;
+    
+}
+.section5 > .grid > .item4 {
+    height: 283px;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/306c5a13ccc9552294a74267/black-white-business-card-mockup-design_47987-2181.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    position: relative;
+    top: -263px;
+}
+.section5 > .grid > .item5 {
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b337b597a9c05feea454d294/ghghhgh.jpg);
+    height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/3;
+    grid-row: 1/1;
+    
+}
+
+
+
+
+.section5 > .quadrado-laranja {
+    width: 400px;
+    height: 100%;
+    background: #eb6928;
+    position: absolute;
+    z-index: -1;
+}
+
+.section6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+}
+
+.section6 > h1 {
+    font-size: 60px;
+    font-family: 'Sora';
+    color: #eb6928;
+    margin: 20px 0;
+}
+
+.section6 > .flex {
+    display: flex;
+}
+
+.section6 > .flex > .items > img {
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+    border: 3px solid #f7c0a5;
+}
+
+.section6 > .flex > .items {
+    width: 267px;
+    height: 597px;
+    background: white;
+    margin: 20px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section6 > .flex > .items > h1 {
+    font-size: 24px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section6 > .flex > .items > p {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'PT Sans';
+    text-align: center;
+}
+
+
+.section6 > .flex > .items > h2 {
+    font-size: 16px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+}
+
+
+.section6 > .flex > .items > .social-medias {
+    display: flex;
+}
+
+.section6 > .flex > .items > .social-medias > i {
+    font-size: 22px;
+    margin: 10px 10px;
+}
+
+.section7 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c7102cb127675661a88e6faf/hghggh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    align-items: center;
+}
+
+.section7 > .transparente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: -2;
+}
+
+.section7 > p {
+    font-size: 16px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.section7 > p > span {
+    border-bottom: 1px solid white;
+}
+
+
+.section7 > .items {
+    width: 250px;
+    height: 268px;
+    margin: 20px 20px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.section7 > .items > h1 {
+
+}
+
+
+
+
+.section7 > .items > .bola-laranja {
+    width: 100px;
+    height: 100px;
+    background: #eb6928;
+    border-radius: 50%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 0;
+}
+
+.section8 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.section8 > .quadrado-laranja {
+    width: 432px;
+    height: 557px;
+    background: #eb6928;
+    top: 20px;
+    left: 50px;
+    position: absolute;
+}
+
+.section8 > .div-image {
+    width: 488px;
+    height: 656px;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: 10;
+
+}
+
+.section8 > .info {
+    width: 780px;
+    height: 673px;
+    background: #292d33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.section8 > .info > h1 {
+    font-size: 60px;
+    font-family: 'Sora';
+    margin: 20px 0;
+}
+
+.section8 > .info > p {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    margin: 20px 0;
+    color: white;
+}
+
+
+.section8 > .info > p > span {
+    border-bottom: 1px solid white;
+}
+
+
+
+.section8 > .info > button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'PT Sans';
+    border: 1px solid white;
+}
+
+
+.section8 > .info > button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    
+    
+</head>
+
+
+<body id="body">
+    
+    <div class="menu-mobile" id="menu-mobile">
+        <picture>
+            
+            <h1><a href="">Bailard Foundation</a></h1>
+            <i class="fas fa-times" id="closed_menu"></i>
+        </picture>
+        
+        <nav id="menu-normal"> 
+            <a href="">Sobre <i class="fas fa-chevron-right" id="abre-menu-suspenso"></i></a>
+            <a href="">Noticias</a>
+            <a href="">Leia</a>
+        </nav>
+        
+        <nav class="menu-suspenso" id="menu-suspenso">
+            <a href=""> voltar</a>
+            <a href="">O que fazemos</a>
+            <a href="">Projetos</a>
+            <a href="">Parceiros</a>
+            <a href="">Contato</a>
+        </nav>
+        
+        
+        <button>Entre em ação</button>
+        
+    </div>
+    
+    <div class="section-header">
+        
+        <header>    
+            <h1><a href="">Bailard Foundation</a></h1>
+            <nav>
+                <a href="">Sobre</a>
+                <a href="">Nóticias</a>
+                <a href="">Leia</a>
+                <button>Entre em ação</button>
+            </nav>
+            
+            <div class="icone">
+                <i class="fas fa-bars" id="open-menu"></i>
+            </div>
+            
+        </header>
+        
+        <section class="section1">
+            <h2>Sustentabilidade</h2>
+            <h1>Começa com <br> você </h1>
+            <button>Saiba mais</button>
+        </section>
+        
+    </div>
+
+    <section class="section2">
+        <h1>Conversamos as terras graças á divulgaçao, <br>
+            restauraçao e pesquisa.</h1>
+            <p>Algumas das mais belas paisagens do planeta estão ameaçadas pelo aumento na construçao de estradas e <br>
+                na exploraçao de gás, petroleo e minerios. Nosso objetivo é proteger essas areas contra o desenvolvimento <br>
+                improprio; mas;sozinhos;não atingiremos nossos objetivos.Descubra como ajudar.</p>
+            </section>
+            
+            
+            <section class="section3">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ed15c766a6c36537f88a55a/1590779012991-0L12L0ZII02THCO5F2AQ/20140302_Trade%2B151_0503.jpg?format=750w" alt="">
+                <div class="info">
+                    <h1>Nossa organizaçao</h1>
+                    <p>Saiba mais sobre nossa missao,nossos metodos e os <br>
+                        resultados de decadas do nosso apoio á causa.</p>
+                        
+                        
+                        <button>Saiba mais</button>
+                        
+                    </div>
+                </section>
+                
+                
+                <section class="section4">
+                    
+                    
+                    <div class="info">
+                        <h1>Entre em ação </h1>
+                        <p>Pronto para o proximo passo? Você pode se contribuir para <br>
+                            nossa causa ou até mesmo participar.</p>
+                            
+                            <button>Saiba com</button>
+                            
+                        </div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/5ed15c766a6c36537f88a55a/1590779006947-MUM75JA4ROWTC0LGR9IL/Aro%252BHa_0073.jpg?format=750w" alt="">
+                        
+                    </section>
+                    
+                    
+                    <section class="section5">
+                        <h1>Assinar</h1>
+                        <p>Inscreva-se com seu endereço de e-mail para receber novidades e atualizações.</p>
+                        
+                        <div class="input-field">
+                            <input type="text" name="name" id="name" placeholder="Endereço de e-mail">
+                            <button>Inscreva-se</button>
+                        </div>
+                        
+                    </section>
+                    
+                    
+                    <footer>
+                        <p>123 Demo Street, New York NY   |   (555) 555-5555   |   email@example.com</p>
+                        <p>Feito com <a href="">Squarespace</a></p>
+                    </footer>
+                    
+                    
+                    
+                </body>
+                
+                
+                <script>
+   
+                    const menu_mobile = document.getElementById("menu-mobile")
+                    const open_menu = document.getElementById("open-menu")
+                    const closed_menu = document.getElementById("closed_menu")
+                    const body = document.getElementById("body")
+                    const abre_menu_suspenso = document.getElementById("abre-menu-suspenso")
+                    const menu_suspenso = document.getElementById("menu-suspenso")
+                    const menu_normal = document.getElementById("menu-normal")
+
+                    
+
+                    
+                    
+
+        open_menu.addEventListener('click', () => {
+            menu_mobile.style.visibility = "visible"
+            body.style.overflowY = "hidden"
+        })
+        
+        closed_menu.addEventListener('click',() => {
+            menu_mobile.style.visibility = "hidden"
+            body.style.overflowY = "visible"
+        })
+        
+        abre_menu_suspenso.addEventListener('click', () => {
+            menu_suspenso.style.visibility = "visible"
+            menu_normal.style.visibility = "hidden"
+   
+               
+            
+        })
+
+
+    </script>
+
+</html>

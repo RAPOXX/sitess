@@ -1,0 +1,59 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #22eab5;
+    padding: 15px 15px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+}
+
+header .logo h1 {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin: 0 10px;
+}
+
+header .logo img {
+    width: 43px;
+    height: 38px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #33333d;
+    border-bottom: 1px solid #33333d;
+}
+
+header .group-buttons button {
+    width: 73px;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+header .group-buttons button:hover {
+    cursor: pointer;
+}
+
+header .group-buttons button:nth-child(1) {
+    background: #69ffd7;
+}
+
+header .group-buttons button:nth-child(2) {
+    background: white;
+    margin: 0 20px 0 0;
+}

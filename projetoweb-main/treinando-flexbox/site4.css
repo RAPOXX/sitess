@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:   'Open Sans';
+}
+
+body {
+    background-color: rgb(60,6,94);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+header > nav > a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header > nav > a:hover {
+    color: rgb(150, 137, 137);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section > .main-texto {
+    color: white;
+    padding: 10px;
+
+}
+
+section > .main-img {
+    width: 587px;
+    height: 521px;
+    background-image: url(https://images01.nicepage.io/c461c07a441a5d220e8feb1a/a9fb239c81c553dfba0355d7/ffffff.jpg);
+    background-size: cover;
+    right: 0;
+    right: 10%;
+}
+
+section > .main-texto > h1 {
+    font-family: 'Barlow';
+    font-size: 48px;
+}
+
+section > .main-texto > p {
+    font-size: 18px;
+    margin: 30px 78px 0px 0px;
+}
+
+
+section > .main-texto > button {
+    margin: 46px 49px 0px 0px;
+    padding: 10px 52px 10px 51px;
+    background-color: #29b7dd;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51,51,51);
+    padding: 40px 30px;
+}
+    
+footer > article {
+    padding: 16px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+footer > article > p > a {
+    color: #a3e1f1;
+}
+
+header > i {
+    font-size: 30px;
+    color: white;
+    visibility: hidden;
+}
+
+header > i:hover {
+    cursor: pointer;
+    color: rgb(170, 162, 162);
+}
+
+.menu {
+    display: none;
+}
+
+
+.menu > nav {
+    width: 300px;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu > nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+.menu > nav > picture {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu > nav > picture > i {
+    color: white;
+    font-size: 30px;
+    margin: 20px 50px;
+}
+
+
+.menu > nav > picture > i:hover {
+    color: rgb(168, 159, 159);
+    cursor: pointer;
+}
+
+
+.menu-transparente {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 300px;
+    background: rgba(0,0,0,0.8);    
+}
+
+
+@media screen  and (max-width: 1000px)  {
+    header > nav {
+        display: none;
+    }
+
+    header >  i {
+        visibility: visible;
+    }
+}

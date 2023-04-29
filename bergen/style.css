@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=Oswald:wght@200&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;300;400;500;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&family=Sora:wght@100;200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;400;700&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background: white;
+}
+
+header .icone {
+    display: none   ;
+}
+
+header i {
+    font-size: 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-family: 'Poppins';
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header button {
+    width: 157px;
+    height: 55px;
+    background: black;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.projetos {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    margin: 20px 0;
+    position: absolute;
+}
+
+.projetos:hover .dropdown {
+    display: flex;
+}
+
+.section1 h1 {
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.section1 h2 {
+    font-size: 17px;
+    font-family: 'Poppins';
+    margin: 100px 0;
+    font-weight: 300;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    height: 120vh;
+}
+
+
+
+.section1 .imagem {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background:url(https://images.squarespace-cdn.com/content/v1/5eb28cb27d813859948666ab/1588759762049-XLI2AH9Q99IL8L7G83LN/Stocksy_txp9c995bd1cMI100_Large_1192028.jpg?format=1500w) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px;
+}
+
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.section2 h1 {
+    font-size: 35px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+    
+}
+
+.section2 p {
+    font-size: 17px;
+    margin: 20px 0;
+    font-family: 'Poppins';
+}
+
+.section2 button {
+    width: 157px;
+    height: 67px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    background: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.squarespace-cdn.com/content/v1/5eb28cb27d813859948666ab/1588759763651-LE60UR1X7KO8J37BPYOH/download+copy+2.jpeg?format=1500w);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0 30px;
+}
+
+.section4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.section4 h1 {
+    font-size: 35px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+}
+
+.section4 p {
+    font-size: 17px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+}
+
+.section4 button {
+    width: 157px;
+    height: 67px;
+    background: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.section5 {
+    width: 100%;
+    height: 100%;
+}
+.section5 .imagem {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background: url(https://images.squarespace-cdn.com/content/v1/5eb28cb27d813859948666ab/1588759761429-7QG0TC9T0ZHPOBDDVE42/Stocksy_txp9c995bd1cMI100_Large_1188910.jpg?format=1500w);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+    margin: 0 30px;
+}
+
+.section6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.section6 h1 {
+    font-size: 35px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+
+}
+
+.section6 p {
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+}
+
+.section6 button {
+    width: 157px;
+    height: 67px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    border: none;
+    outline: none;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .column:nth-child(2) {
+    display: flex;
+}
+
+footer .column:nth-child(2) .info {
+    margin: 0 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black; 
+}
+
+footer h1 {
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+
+    header .icone {
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .section1 h1 {
+        font-size: 35px;
+    }
+
+
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .section6 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .section4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer,footer .column:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    .section1 h1 {
+        font-size: 25px;
+    }
+}

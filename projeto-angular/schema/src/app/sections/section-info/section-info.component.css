@@ -1,0 +1,51 @@
+section {
+    width: 500px;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #d7f5ed;
+    padding:  70px 0px 100px 150px;
+    position: absolute;
+    left: 0;
+}
+
+section h1 {
+    font-size: 46px;
+    font-family: 'Nunito Sans';
+    color: #22293b;
+    margin: 20px 0;
+}
+
+section .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+section .flex .items {
+    display: flex;
+}
+
+section img {
+    width: 64px;
+    height: 64px;
+}
+
+section p {
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    color: #22293b;
+}
+
+section nav {
+    position: absolute;
+    bottom:  250px;
+    left: 50px;
+}
+
+section nav a {
+    text-decoration: none;
+    color: #22293b;
+    border-bottom: 1px solid  #22293b;
+    margin: 0 5px;
+}   

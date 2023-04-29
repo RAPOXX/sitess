@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:wght@100&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+    align-items: center;
+}
+
+header > nav > a {
+    color: black;
+    padding: 0 7px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+section {
+    max-width: 100%;
+    background: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c77a5184c87552b6a3238666/rt-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section >  main {
+    width: 450px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    background: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > main h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Playfair Display';
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+section > main > .input-field > input {
+    width: 350px;
+    height: 50px;
+    border: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 10px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+section > main > .input-field > .caixap{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+section > main > .input-field > .caixap  a {
+    text-decoration: none;
+    color: #8a9ac1;
+
+}
+
+section > main > button {
+    width: 300px;
+    height: 40px;
+    background: #c81fca;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+section > main > button:hover {
+    background: rgb(75,80,93);
+    cursor: pointer;
+}
+
+section > main > .freepik  {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icones {
+    text-align: center;
+}
+
+.icones > i  {
+    font-size: 25px;
+    margin: 20px 5px;
+}
+
+footer {
+    background: #333333;
+    text-align: center;
+    padding: 20px;
+}
+
+footer > article {
+    color: white;
+    padding: 20px;
+
+    font-size: 15px;
+}
+
+footer > article > p > a {
+    color: #ccd4e6;
+    font-size: 15px;
+}
+
+
+section > main > .freepik > span {
+    border-bottom: 1px solid #ccd4e6;
+}
+
+.menu-responsivo {
+    display: none;
+}
+
+
+.menu-responsivo > nav {
+    position: absolute;
+    top: 0;
+    background: black;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-responsivo > nav > a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: white;
+}
+
+.menu-responsivo > nav > picture {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu-responsivo > nav > picture > i {
+    color: white;
+    font-size: 30px;
+    margin: 20px 50px;
+}
+
+.menu-responsivo > nav > picture > i:hover {
+    color: rgb(202, 190, 190);
+    cursor:pointer;
+}
+
+header > i {
+    font-size: 30px;
+    visibility: hidden;
+}
+
+header > i:hover {
+    color: rgb(158, 151, 151);
+    cursor: pointer;
+}
+
+.menu-transparente {
+    display: none;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 1000px) {
+    header > nav {
+        display: none;
+    }
+
+    header > i {
+        visibility: visible;
+    }
+}

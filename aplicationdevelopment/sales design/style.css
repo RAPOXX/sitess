@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,600;1,700&family=Open+Sans:wght@300&family=Oswald:wght@200&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;300;400;500;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200;400;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+}
+
+header > .input-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(112, 108, 108);
+    padding: 10px;
+    
+}
+
+header > .input-search > input {
+    border: none;
+    outline: none;
+}
+
+header > i {
+    font-size: 30px;
+
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/67856f1065845df4bf9e75e6/dddd-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section1 > .info > h3 {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section1 > .info h1 {
+    font-size: 72px;
+    font-family: 'Roboto Condensed';
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section1 > .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 200px;
+}
+
+.section1 > .info > .input-button {
+    margin: 20px 0;
+    display: flex;
+}
+
+.section1 > .info > .input-button > h1 {
+    font-size: 30px;
+    font-family: 'Raleway';
+}
+
+.section1 > .info > .input-button > button {
+    width: 190px;
+    height: 50px;
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    margin: 0px 20px;
+    font-size: 16px;
+}
+
+
+.section2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 > h1 {
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    margin: 50px 0;
+}
+
+.section2 > .flex > .items {
+    margin: 20px 50px;
+}
+
+.section2 > .flex {
+    display: flex;
+}
+
+.section2  > .flex > .items > i {
+    font-size: 44px;
+
+}
+
+.section2 > .flex > .items > h1 {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin: 20px 0;
+}
+
+.section2 > .flex > .items > p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.section2 > button {
+    font-size: 16px;
+    width: 190px;
+    height: 50px;
+    margin: 20px 0;
+    border: 1px solid black;
+    outline: none;
+    background: none;
+}
+
+.section3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 > .columnone > h1 {
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section3 > .columnone {
+    width: 630px;
+    height: 735px;
+
+}
+
+.section3 > .columntwo {
+    width: 60vh;
+    height: 100vh;
+    background: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/560c97ce8255581cb7d65f9d/pexels-photo-2050137.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 > .columntwo > p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+} 
+
+.section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.section4 > h1 {
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    margin: 20px 0;
+}
+
+.section4 > p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.section4 > .flex {
+    display: flex;
+}
+
+.section4 > .flex > .items {
+    margin: 20px 50px;
+}
+
+.section4 > .flex > .items > h1 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin: 20px 0;
+}
+
+.section4 > .flex > .items > p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+
+.section5 {
+    width: 100%;
+    background: url(https://images01.nicepage.com/23/2c/232c6d839624da0ae42d0f0b813ed0e8.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover,cover;
+    background-position-x: 50%,50%;
+    background-position-y: 50%,50%;
+}
+
+.section6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section6 > h1 {
+    font-size: 48px;
+    font-family: 'Robot Condensed';
+    margin: 20px 0;
+}
+
+.section6 > .grid >  .items {
+    margin: 20px 50px;
+}
+
+.section6 > .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.section6 > .grid > .items > h1 {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.section6 > .grid > .items > p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.section6 > .grid > .items > i {
+    font-size: 44px;
+}
+
+.section7 {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section7 > h1 {
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    margin: 20px 0;
+    color: white;
+}
+
+.section7 > button {
+    width: 190px;
+    height: 50px;
+    outline: none;
+    margin: 20px 0;
+    background: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+.section7 > button:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+.section8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section8 > h1 {
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    margin: 20px 0;
+}
+
+.section8 > .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.section8 > .grid > img {
+    width: 373px;
+    height: 304px;
+    margin: 10px 10px;
+}
+
+.section8 > button {
+    width: 190px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    margin: 20px 0;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+.section8 > button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.section9 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.section9 > .slider > .items > img {
+    width: 180px;
+    height: 180px;
+    margin: 20px 0;
+    border-radius: 50%;
+
+}
+
+.section9 > i:nth-child(1) {
+    position:  absolute;
+    left: 20px;
+    font-size: 50px;
+    top: 50%;
+    transform: translate(50%);
+}
+
+.section9 > i:nth-child(2) {
+    right: 30px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%);
+}
+
+.section9 > .slider {
+    height: 490px;
+    overflow: hidden;
+}
+
+.section9 > .slider > .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.section9 > .slider > .items > p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.section9 > .slider > .items > h1 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.section9 > .slider > .items > p > span {
+    border-bottom: 1px solid black;
+}
+
+footer > article:nth-child(1) {
+    background: white;
+    text-align: center;
+}
+
+footer > article:nth-child(1) > p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+footer > article:nth-child(2) {
+    background: #333333;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+footer  > article:nth-child(2) > p {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+footer > article:nth-child(2) > p > a {
+    text-decoration: none;
+    color: #9bcaf6;
+    border-bottom: 1px solid #9bcaf6;
+}
+
+
+.menu {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.menu > picture {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > picture > i {
+    font-size: 30px;
+    margin: 20px 50px;
+
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.menu > a:hover {
+    cursor: pointer;
+    color: rgb(189, 183, 183);
+}
+
+
+.menu-transparente {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    background: rgba(0,0,0,0.6);
+}
+
+
+html,body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 1000px) {
+
+    .section2 > .flex {
+        flex-wrap: wrap;
+    }
+
+    .section4 > .flex {
+        flex-wrap: wrap;
+    }
+
+
+    .section6 > .grid {
+        grid-template-columns: auto auto;
+    }
+
+
+    .section8 > .grid {
+        grid-template-columns: auto auto;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+    .section1 > .info > .input-button {
+        flex-direction: column;
+    }
+
+    .section1 {
+        justify-content: center;
+    }
+
+    .section2 > .flex {
+        justify-content: center;
+    }
+
+    .section2 > h1 {
+        font-size: 36px;
+    }
+
+
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section3 > div {
+        margin: 100px 20px;
+    }
+
+    .section4 > .flex {
+        justify-content: center;
+    }
+
+
+    .section6 > .grid {
+        grid-template-columns: auto ;
+    }
+
+    .section8 > .grid {
+        grid-template-columns: auto;
+    }
+
+
+    .section9 > .slider > .items > p {
+        font-size: 13px;
+    }
+
+
+
+}
+@media screen and (max-width: 578px) {
+    .section8 {
+
+    }
+}

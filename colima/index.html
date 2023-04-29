@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Colima</title>
+</head>
+<body id="body">
+
+    <div class="menu-mobile" id="menu-mobile">
+        <picture>
+            <h1><a href="">Colima</a></h1>
+            <i class="fas fa-times" id="closed-menu"></i>
+        </picture>
+        <nav>
+            <a href="">Sobre</a>
+            <a href="">Nossos instrutores</a>
+            <a href="">aulas</a>
+            <a href="">Localização</a>
+            <a href="">Blog</a>
+            <button>Reserve uma aula</button>
+        </nav>
+
+
+
+    </div>
+
+    <div class="section-header">
+        <header>
+            <h1><a href="">Colima</a></h1>
+
+            <nav>
+                <a href="">Sobre</a>
+                <a href="">Nossos instrutores</a>
+                <a href="">Aulas</a>
+                <a href="">Localização</a>
+                <a href="">Blog</a>
+                <button>Reserve uma aula</button>
+            </nav>
+
+
+            <div class="icone">
+
+                <i class="fas fa-bars" id="open-menu"></i>
+                
+            </div>
+
+        </header>
+        
+        <section class="section1">
+            <h1>Cuide do seu corpo, <br>
+                mente e alma.</h1>
+
+                <p>Inscreva-se para fazer uma aula gratuita e <br>
+                     conheça  a nossa academia e os cursos que <br>
+                      oferecemos.</p>
+
+                    <a href="">Reserve uma aula</a>
+
+
+        </section>
+        
+
+        
+        
+        
+        
+    </div>
+    <section class="section2">
+        <h1>Próximas aulas</h1>
+        <div class="flex">
+            <div class="item items">
+                <img src="https://images.squarespace-cdn.com/content/v1/5eb28cd1629eec496fa5b12e/1588759787850-Z8E2FIRNL71BHIQMMZOH/static1.squarespace-2.jpg?format=750w" alt="" srcset="">
+                <h1>loga aeróbica</h1>
+            </div>
+            
+            <div class="item items">
+                <img src="https://images.squarespace-cdn.com/content/v1/5eb28cd1629eec496fa5b12e/1588759787850-Z8E2FIRNL71BHIQMMZOH/static1.squarespace-2.jpg?format=750w" alt="" srcset="">
+                <h1>Treinamento para <br>
+                    instrutores</h1>
+            </div>
+        </div>
+
+        <h2>Além da programaçao normal, também <br>
+            recebemos professores visitantes e <br>
+            palestrantes.</h2>
+
+
+            <button>Ver mais</button>
+
+    </section>
+
+
+    <section class="section3">
+        <div class="columnone">
+
+            <h1>Com ênfase nas técnicas de respiração e <br>
+                meditação, promovemos a ioga reflexiva para <br>
+                promover o bem-estar físico e mental.</h1>
+            </div>
+
+
+            <div class="columntwo">
+                <p>Saiba mais sobre a academia e a <br>
+                     nossa filosofia sobre  a ioga</p>
+                <button>Saiba mais</button>
+            </div>
+
+    
+    
+        </section>
+
+
+        <section class="section4">
+            <h1>Assine nossa newsletter</h1>
+            <p>Cadastre-se para receber noticias e atualizações.</p>
+
+            <div class="input-field">
+                <input type="text" name="name" id="name" placeholder="Nome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                <input type="text" name="email" id="email" placeholder="Endereço de e-mail">
+                <button>inscreva-se</button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <article>
+                <h1><a href="">Colima</a></h1>
+                <p>Feito com o <a href="">Squarespace</a></p>
+            </article>
+
+            <article class="article2">
+                <p>123 Rua Exemplo</p>
+                <p>Lake Tahoe, CA</p>
+                <p>(555) 555-555</p>
+            </article>
+
+            <article class="article3">
+                <nav>
+
+                    <a href="">Sobre</a>
+                    <a href="">Localização</a>
+                    <a href="">Aulas</a>
+                    <a href="">Reserve uma aula</a>
+                </nav>
+            </article>
+
+            <article>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+            </article>
+
+
+
+        </footer>
+
+</body>
+
+    <script>
+        const menu_mobile = document.getElementById("menu-mobile")
+        const open_menu = document.getElementById("open-menu")
+        const closed_menu = document.getElementById("closed-menu")
+        const body = document.getElementById("body")
+
+        open_menu.addEventListener('click',() => {
+            menu_mobile.style.display = "block"
+            body.style.overflowY = "hidden"
+        })
+
+        closed_menu.addEventListener('click', () => {
+            menu_mobile.style.display = "none"
+            body.style.overflowY = "visible"
+        })
+
+
+    </script>
+
+</html>
